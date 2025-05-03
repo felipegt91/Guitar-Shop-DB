@@ -2,7 +2,7 @@
 CREATE DATABASE guitar_shop_db;
 USE guitar_shop_db;
 
--- Tabela de produtos (guitarras)
+-- Tabela de produtos
 CREATE TABLE produtos (
     id INT AUTO_INCREMENT PRIMARY KEY,
     modelo VARCHAR(100) NOT NULL,
@@ -39,7 +39,7 @@ CREATE TABLE itens_pedido (
     FOREIGN KEY (produto_id) REFERENCES produtos(id)
 );
 
--- Inserção de dados na tabela produtos (guitarras)
+-- Inserção de dados na tabela produtos
 INSERT INTO produtos (modelo, marca, tipo, madeira_corpo, madeira_braco, num_cordas, preco, estoque, data_cadastro) VALUES
 ('Stratocaster', 'Fender', 'elétrica', 'Alder', 'Maple', 6, 4500.00, 5, '2025-01-15'),
 ('Les Paul', 'Gibson', 'elétrica', 'Mahogany', 'Mahogany', 6, 8500.00, 3, '2025-02-10'),
