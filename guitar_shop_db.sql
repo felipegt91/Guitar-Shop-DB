@@ -41,15 +41,15 @@ CREATE TABLE itens_pedido (
 
 -- Inserção de dados na tabela produtos (guitarras)
 INSERT INTO produtos (modelo, marca, tipo, madeira_corpo, madeira_braco, num_cordas, preco, estoque, data_cadastro) VALUES
-('Stratocaster', 'Fender', 'elétrica', 'Alder', 'Maple', 6, 4500.00, 5, '2023-01-15'),
-('Les Paul', 'Gibson', 'elétrica', 'Mahogany', 'Mahogany', 6, 8500.00, 3, '2023-02-10'),
-('D-28', 'Martin', 'acústica', 'Rosewood', 'Mahogany', 6, 12000.00, 2, '2023-01-20');
+('Stratocaster', 'Fender', 'elétrica', 'Alder', 'Maple', 6, 4500.00, 5, '2025-01-15'),
+('Les Paul', 'Gibson', 'elétrica', 'Mahogany', 'Mahogany', 6, 8500.00, 3, '2025-02-10'),
+('D-28', 'Martin', 'acústica', 'Rosewood', 'Mahogany', 6, 12000.00, 2, '2025-01-20');
 
 -- Inserção de dados na tabela pedidos
 INSERT INTO pedidos (cliente_nome, cliente_email, cliente_telefone, data_pedido, status, total, forma_pagamento) VALUES
-('Pedro Santos', 'pedro@email.com', '(11) 9999-8888', '2023-05-01 14:30:00', 'entregue', 4500.00, 'cartão crédito'),
-('Ana Costa', 'ana@email.com', '(21) 7777-6666', '2023-05-02 16:45:00', 'processando', 17000.00, 'boleto'),
-('Lucas Oliveira', NULL, '(31) 8888-9999', '2023-05-03 10:20:00', 'pendente', 12000.00, 'pix');
+('Pedro Santos', 'pedro@email.com', '(11) 9999-8888', '2025-05-01 14:30:00', 'entregue', 4500.00, 'cartão crédito'),
+('Ana Costa', 'ana@email.com', '(21) 7777-6666', '2025-05-02 16:45:00', 'processando', 17000.00, 'boleto'),
+('Lucas Oliveira', NULL, '(31) 8888-9999', '2025-05-03 10:20:00', 'pendente', 12000.00, 'pix');
 
 -- Inserção de dados na tabela itens_pedido
 INSERT INTO itens_pedido (pedido_id, produto_id, quantidade, preco_unitario) VALUES
